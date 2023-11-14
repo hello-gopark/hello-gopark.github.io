@@ -1,0 +1,285 @@
+body {
+    font-family: 'Rubik';
+    font-size: 16px;
+    margin: 0;
+    color: #fff;
+    background-color: #222;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+}
+
+p, b {
+    line-height: 200%;
+    font-size: 1.125rem;
+}
+h1 {
+    font-size: 3.75rem;
+    font-weight: 600; 
+    margin: 0;
+}
+h3, h4 {
+    font-weight: 100;
+}
+h2, h3, h4, h5, h6, li {
+    line-height: 150%;
+    margin: 0;
+}
+
+/* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5rem;
+    background-color: #000;
+    height: 5.625rem;
+}
+nav a {
+    margin: 0 1.875rem;
+    font-size: 1.125rem;
+    color: #fff;
+}
+nav a:hover {
+    border-radius: 2.5rem;
+    padding: 0.625rem 1.25rem;
+    background-color: #808080;
+}
+
+/* SIGNIFIERS */
+button {
+    width: auto;
+    cursor: pointer;
+    font-size: 1rem;
+    border: 0.1875rem solid #fff;
+    border-radius: 2.5rem;
+    padding: 0.625rem 1.25rem;
+    background-color: transparent;
+    color: #fff;
+    margin-top: 0.3125rem;
+    transition: 0.5s;
+}
+button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+/* MAIN */
+.content {
+    display: grid;
+    margin-top: 1.25rem;
+    justify-content: space-between;
+    align-items: center;
+}
+#opening, #about-us, #demo, #impact, #people, #subscription, #contact {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: flex-start;
+    padding: 3.125rem 8.75rem 7.5rem;
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+}
+.me {
+    width: 100%;
+    height: auto;
+}
+#opening video {
+    width: 100%;
+    border: 0.3125rem solid #fff;
+    border-radius: 1.875rem;
+    margin-bottom: 1.25rem;
+}
+#about-us {
+    top: -5rem;
+    background-color: #333;
+}
+#about-us .content {
+    grid-template-columns: 48% 48%;
+}
+#about-us .wrapper {
+    width: 100%;
+    padding-bottom: 1.25rem;
+    
+}
+#demo {
+    top: -10rem;
+    background-color: #444;
+}
+#demo .content {
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    row-gap: 0.625rem;
+}
+#demo .subtitle {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.navmenu {
+    width: 100%;
+    margin-left: -2.5rem;
+    margin-top: -0.9375rem;
+}
+.navmenu li {
+    list-style: none;
+    display: flex;
+}
+.navmenu li form{
+    width: 100%;
+}
+.dot {
+    width: 0.9375rem;
+    height: 0.9375rem;
+    border: 0.625rem solid;
+    border-radius: 50%;
+    margin: auto 0.9375rem auto 0;
+}
+.line {
+    margin: -1.875rem 0.8125rem;
+    width: 0.5rem;
+    height: 3.75rem;
+    background-color: white;
+}
+#impact {
+    top: -10rem;
+    background-color: #555;
+}
+#impact .content, #people .content {
+    width: 100%;
+    grid-template-columns: repeat(5, 20%);
+    justify-content: space-between;
+    gap: 0.625rem 0.625rem;
+}
+#impact .subtitle, #impact .left, #impact .right {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+#impact .left, #impact .right {
+    gap: 2.5rem 2.5rem;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+}
+#impact .image {
+    width: 100%;
+    height: auto;
+    border: 0.3125rem solid #fff;
+    border-radius: 1.25rem;
+}
+#people {
+    top: -15rem;
+    background-color: #666;
+}
+.entry {
+    border: 0.3125rem solid #fff;
+    border-radius: 1.875rem;
+    text-align: center;
+    padding-bottom: 0.625rem;
+    margin: 0.625rem auto;
+}
+.logo {
+    width: 100%;
+    border-bottom: 0.3125rem solid #fff;
+    border-top-left-radius: 1.5625rem;
+    border-top-right-radius: 1.5625rem;
+}
+#subscription {
+    top: -20rem;
+    background-color: #777;
+}
+#subscription .content {
+    grid-template-columns: repeat(3, 30%);
+}
+#subscription ul {
+    text-align: left;
+    list-style: none;
+}
+#contact {
+    top: -25rem;
+    background-color: #888;
+}
+#contact .content {
+    grid-template-columns: repeat(2, 48%);
+    align-items: flex-start;
+}
+#contact .subtitle {
+    width: 100%;
+    grid-area: 1 / 1 / 2 / 3;
+}
+#contact .icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-top: 1.25rem;
+    margin-right: 1.25rem;
+}
+input,textarea {
+    width: 80%;
+    font-family: 'Rubik';
+    padding: 1.25rem;
+    font-size: 1rem;
+    margin: 0.625rem 0;
+    border: 0.1875rem solid #fff;
+    border-radius: 0.625rem;
+    background-color: transparent;
+    color: #fff;
+}
+::placeholder {
+    font-size: 1rem;
+    color: #fff;
+    opacity: 0.7;
+}
+
+@media only screen and (max-width: 700px) {
+    header {
+        justify-content: center;
+        height: 3.75rem;
+    }
+    nav {
+        display: none;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    #opening, #about-us, #demo, #impact, #people, #subscription, #contact {
+        padding: 3.125rem 2.5rem 6.25rem;
+    }
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #opening {
+        padding-top: 0;
+    }
+    #about-us .content {
+        width: 100%;
+        flex-wrap: wrap-reverse;
+    }
+    #about-us .wrapper {
+        width: 100%;
+    }
+    #impact .left, #impact .right {
+        display: flex;
+        row-gap: 0.625rem;
+        margin-bottom: 1.25rem;
+    }
+    #impact .left {
+        flex-wrap: wrap;
+    }
+    #impact .right {
+        flex-wrap: wrap-reverse;
+    }
+    #contact .me {
+        display: none;
+    }
+}
