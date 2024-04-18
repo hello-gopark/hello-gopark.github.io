@@ -110,7 +110,7 @@ function App() {
             </div>
         </div>
 
-        <div id="people">
+        {/* <div id="people">
             <h1>People</h1>
             <div className="content">
                 <div className="entry">
@@ -146,7 +146,7 @@ function App() {
                     <a href="https://www.linkedin.com/in/phurinut/" target="_blank"><button>View Profile</button></a>
                 </div>
             </div>
-        </div>
+        </div> */}
 
         <div id="subscription">
             <h1>Subscription</h1>
