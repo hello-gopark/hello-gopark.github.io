@@ -52,7 +52,7 @@ function App() {
             <div>  
                 <h1>Introducing GoPark</h1>
                     <h3>An Environmentally Innovative Solution For Traffic</h3><hr/>
-                    <a href="./GoPark.pdf" download><button>Download Research</button></a>
+                    {/* <a href="./GoPark.pdf" download><button>Download Research</button></a> */}
                 </div>
             </div>
         </div>
